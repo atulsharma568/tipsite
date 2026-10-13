@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-13T14:17:57Z",
+  "title": "Design System: Tipsite",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Warm Night",
+        "canonical": "oklch(0.155 0.008 115)",
+        "tonalRamp": [
+          "oklch(0.150 0.008 115)",
+          "oklch(0.264 0.008 115)",
+          "oklch(0.379 0.008 115)",
+          "oklch(0.493 0.008 115)",
+          "oklch(0.607 0.008 115)",
+          "oklch(0.721 0.008 115)",
+          "oklch(0.836 0.008 115)",
+          "oklch(0.950 0.008 115)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Card Dusk",
+        "canonical": "oklch(0.205 0.009 115)",
+        "tonalRamp": [
+          "oklch(0.150 0.009 115)",
+          "oklch(0.264 0.009 115)",
+          "oklch(0.379 0.009 115)",
+          "oklch(0.493 0.009 115)",
+          "oklch(0.607 0.009 115)",
+          "oklch(0.721 0.009 115)",
+          "oklch(0.836 0.009 115)",
+          "oklch(0.950 0.009 115)"
+        ]
+      },
+      "raised": {
+        "role": "neutral",
+        "displayName": "Raised Smoke",
+        "canonical": "oklch(0.26 0.01 115)",
+        "tonalRamp": [
+          "oklch(0.150 0.010 115)",
+          "oklch(0.264 0.010 115)",
+          "oklch(0.379 0.010 115)",
+          "oklch(0.493 0.010 115)",
+          "oklch(0.607 0.010 115)",
+          "oklch(0.721 0.010 115)",
+          "oklch(0.836 0.010 115)",
+          "oklch(0.950 0.010 115)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(0.36 0.01 115)",
+        "tonalRamp": [
+          "oklch(0.150 0.010 115)",
+          "oklch(0.264 0.010 115)",
+          "oklch(0.379 0.010 115)",
+          "oklch(0.493 0.010 115)",
+          "oklch(0.607 0.010 115)",
+          "oklch(0.721 0.010 115)",
+          "oklch(0.836 0.010 115)",
+          "oklch(0.950 0.010 115)"
+        ]
+      },
+      "control": {
+        "role": "neutral",
+        "displayName": "Control Edge",
+        "canonical": "oklch(0.52 0.011 115)",
+        "tonalRamp": [
+          "oklch(0.150 0.011 115)",
+          "oklch(0.264 0.011 115)",
+          "oklch(0.379 0.011 115)",
+          "oklch(0.493 0.011 115)",
+          "oklch(0.607 0.011 115)",
+          "oklch(0.721 0.011 115)",
+          "oklch(0.836 0.011 115)",
+          "oklch(0.950 0.011 115)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Ash",
+        "canonical": "oklch(0.74 0.01 110)",
+        "tonalRamp": [
+          "oklch(0.150 0.010 110)",
+          "oklch(0.264 0.010 110)",
+          "oklch(0.379 0.010 110)",
+          "oklch(0.493 0.010 110)",
+          "oklch(0.607 0.010 110)",
+          "oklch(0.721 0.010 110)",
+          "oklch(0.836 0.010 110)",
+          "oklch(0.950 0.010 110)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Chalk",
+        "canonical": "oklch(0.95 0.006 110)",
+        "tonalRamp": [
+          "oklch(0.150 0.006 110)",
+          "oklch(0.264 0.006 110)",
+          "oklch(0.379 0.006 110)",
+          "oklch(0.493 0.006 110)",
+          "oklch(0.607 0.006 110)",
+          "oklch(0.721 0.006 110)",
+          "oklch(0.836 0.006 110)",
+          "oklch(0.950 0.006 110)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Acid Lime",
+        "canonical": "#bfe84a",
+        "tonalRamp": [
+          "oklch(0.150 0.045 122.9)",
+          "oklch(0.264 0.067 122.9)",
+          "oklch(0.379 0.094 122.9)",
+          "oklch(0.493 0.121 122.9)",
+          "oklch(0.607 0.149 122.9)",
+          "oklch(0.721 0.177 122.9)",
+          "oklch(0.836 0.185 122.9)",
+          "oklch(0.950 0.150 122.9)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Field Ink",
+        "canonical": "oklch(0.2 0.025 120)",
+        "tonalRamp": [
+          "oklch(0.150 0.025 120)",
+          "oklch(0.264 0.025 120)",
+          "oklch(0.379 0.025 120)",
+          "oklch(0.493 0.025 120)",
+          "oklch(0.607 0.025 120)",
+          "oklch(0.721 0.025 120)",
+          "oklch(0.836 0.025 120)",
+          "oklch(0.950 0.025 120)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero beats, the closing headline and step verbs. Bricolage Grotesque at 82% width, weight 800."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Tile titles such as Cards and What it costs."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Sublines and FAQ answers at 100% width. Measure 34ch to 56ch."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Every button label."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field and group labels, nav links, footer."
+      },
+      "amount": {
+        "displayName": "Amount",
+        "purpose": "Amount chips and the handle field. Geist Mono, tabular figures."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "The success amount on the tip card and the amount on the stream alert. Geist Mono, larger than every headline."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Every reveal, accordion and entrance."
+      },
+      {
+        "name": "press",
+        "value": "200ms",
+        "purpose": "Button press scale and link color changes."
+      },
+      {
+        "name": "beat",
+        "value": "450ms",
+        "purpose": "Headline beat turning lime."
+      },
+      {
+        "name": "accordion",
+        "value": "500ms",
+        "purpose": "FAQ rows opening and the Plus rotating."
+      },
+      {
+        "name": "flood",
+        "value": "850ms",
+        "purpose": "Lime circle flood on the tip card success state."
+      },
+      {
+        "name": "reveal",
+        "value": "1100ms",
+        "purpose": "Entrance and scroll reveals, staggered 120ms."
+      },
+      {
+        "name": "read-along",
+        "value": "500ms per word",
+        "purpose": "Stream alert message lighting one word at a time, a snap with no fade."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The lime pill used for every primary claim action on dark surfaces.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Claim your handle<svg viewBox=\"0 0 256 256\" width=\"16\" height=\"16\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M204,64V168a12,12,0,0,1-24,0V93L72.49,200.49a12,12,0,0,1-17-17L163,76H88a12,12,0,0,1,0-24H192A12,12,0,0,1,204,64Z\"/></svg></a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 8px; height: 56px; padding: 0 32px; border-radius: 9999px; background: var(--color-accent); color: var(--color-ink); font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 16px; font-weight: 600; line-height: 24px; text-decoration: none; transition: transform 200ms; } .ds-btn-primary:active { transform: scale(0.97); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "The Field Ink pill that submits the closing handle form on the lime field.",
+      "html": "<div class=\"ds-ink-field\"><button class=\"ds-btn-ink\" type=\"button\">Claim your handle</button></div>",
+      "css": ".ds-ink-field { background: var(--color-accent); padding: 24px; border-radius: 20px; } .ds-btn-ink { height: 64px; padding: 0 32px; border: 0; border-radius: 9999px; background: var(--color-ink); color: var(--color-accent); font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 16px; font-weight: 600; line-height: 24px; cursor: pointer; transition: transform 200ms; } .ds-btn-ink:active { transform: scale(0.97); } .ds-btn-ink:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 3px; }"
+    },
+    {
+      "name": "Outline Ink Button",
+      "kind": "button",
+      "refersTo": "button-outline-ink",
+      "description": "The 2px Field Ink outline pill on lime, used for Tip again. Hover fills with ink.",
+      "html": "<div class=\"ds-ink-field2\"><button class=\"ds-btn-outline\" type=\"button\"><svg viewBox=\"0 0 256 256\" width=\"14\" height=\"14\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M228,128a100,100,0,0,1-98.66,100H128a99.39,99.39,0,0,1-68.62-27.29,12,12,0,0,1,16.48-17.45,76,76,0,1,0-1.57-109c-.13.13-.25.25-.39.37L54.89,92H72a12,12,0,0,1,0,24H24a12,12,0,0,1-12-12V56a12,12,0,0,1,24,0V76.72L57.48,57.06A100,100,0,0,1,228,128Z\"/></svg>Tip again</button></div>",
+      "css": ".ds-ink-field2 { background: var(--color-accent); padding: 24px; border-radius: 20px; } .ds-btn-outline { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 20px; border: 2px solid var(--color-ink); border-radius: 9999px; background: transparent; color: var(--color-ink); font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; transition: background-color 200ms, color 200ms; } .ds-btn-outline:hover { background: var(--color-ink); color: var(--color-accent); } .ds-btn-outline:focus-visible { outline: 2px solid var(--color-ink); outline-offset: 3px; }"
+    },
+    {
+      "name": "Amount Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Pill radio chips for choosing a tip amount. Selected fills lime; unselected uses the Control Edge border.",
+      "html": "<div class=\"ds-chip-wrap\"><span class=\"ds-chip\">₹50</span><span class=\"ds-chip ds-chip-on\">₹100</span><span class=\"ds-chip\">₹250</span><span class=\"ds-chip\">₹500</span></div>",
+      "css": ".ds-chip-wrap { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; background: var(--color-surface); padding: 24px; border-radius: 20px; } .ds-chip { display: flex; align-items: center; justify-content: center; height: 48px; border: 1px solid var(--color-control); border-radius: 9999px; color: var(--color-text); font-family: var(--font-geist-mono), ui-monospace, monospace; font-variant-numeric: tabular-nums; font-size: 16px; cursor: pointer; transition: border-color 200ms; } .ds-chip:hover { border-color: var(--color-muted); } .ds-chip-on { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-ink); font-weight: 600; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "The 12px-radius form field with a Control Edge border; focus turns the border lime.",
+      "html": "<div class=\"ds-field-wrap\"><label class=\"ds-field\"><span class=\"ds-field-label\">Name</span><input class=\"ds-input\" type=\"text\" placeholder=\"Riya\"></label></div>",
+      "css": ".ds-field-wrap { background: var(--color-surface); padding: 24px; border-radius: 20px; } .ds-field { display: block; } .ds-field-label { display: block; margin-bottom: 8px; color: var(--color-muted); font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 14px; font-weight: 500; line-height: 20px; } .ds-input { box-sizing: border-box; width: 100%; height: 48px; padding: 0 16px; border: 1px solid var(--color-control); border-radius: 12px; background: var(--color-ground); color: var(--color-text); font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 16px; } .ds-input::placeholder { color: var(--color-muted); } .ds-input:focus-visible { border-color: var(--color-accent); outline: 2px solid var(--color-accent); outline-offset: 3px; }"
+    },
+    {
+      "name": "Handle Field",
+      "kind": "input",
+      "refersTo": "field-handle",
+      "description": "The closing pill field: 2px Field Ink outline on lime, mono prefix and value.",
+      "html": "<div class=\"ds-handle-field\"><span class=\"ds-handle-label\">Your handle</span><div class=\"ds-handle\"><span class=\"ds-handle-prefix\">tipsite.in/</span><input class=\"ds-handle-input\" type=\"text\" placeholder=\"yourname\"></div></div>",
+      "css": ".ds-handle-field { background: var(--color-accent); padding: 24px; border-radius: 20px; } .ds-handle-label { display: block; margin-bottom: 8px; color: var(--color-ink); font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 14px; font-weight: 600; } .ds-handle { display: flex; align-items: center; height: 64px; padding: 0 24px; border: 2px solid var(--color-ink); border-radius: 9999px; } .ds-handle:focus-within { outline: 2px solid var(--color-ink); outline-offset: 4px; } .ds-handle-prefix { color: color-mix(in oklab, var(--color-ink) 85%, transparent); font-family: var(--font-geist-mono), ui-monospace, monospace; font-variant-numeric: tabular-nums; font-size: 16px; } .ds-handle-input { flex: 1; min-width: 0; height: 100%; border: 0; outline: none; background: transparent; color: var(--color-ink); font-family: var(--font-geist-mono), ui-monospace, monospace; font-variant-numeric: tabular-nums; font-size: 16px; } .ds-handle-input::placeholder { color: color-mix(in oklab, var(--color-ink) 85%, transparent); }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-scrolled",
+      "description": "Fixed 64px bar: display wordmark, Ash links, one lime pill. Shown in its scrolled state: solid Warm Night with a Hairline rule.",
+      "html": "<header class=\"ds-nav\"><span class=\"ds-nav-mark\">Tipsite</span><nav class=\"ds-nav-links\"><a href=\"#\">How it works</a><a href=\"#\">On stream</a><a href=\"#\">Fees</a><a href=\"#\">FAQ</a></nav><a class=\"ds-nav-cta\" href=\"#\">Claim your handle</a></header>",
+      "css": ".ds-nav { display: flex; align-items: center; justify-content: space-between; height: 64px; padding: 0 24px; background: var(--color-ground); border-bottom: 1px solid color-mix(in oklab, var(--color-line) 60%, transparent); } .ds-nav-mark { color: var(--color-text); font-family: var(--font-bricolage), system-ui, sans-serif; font-stretch: 82%; font-weight: 800; letter-spacing: -0.015em; word-spacing: 0.03em; line-height: 0.98; font-size: 24px; } .ds-nav-links { display: flex; gap: 32px; } .ds-nav-links a { color: var(--color-muted); font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 14px; text-decoration: none; transition: color 200ms; } .ds-nav-links a:hover { color: var(--color-text); } .ds-nav-cta { display: inline-flex; align-items: center; height: 40px; padding: 0 20px; border-radius: 9999px; background: var(--color-accent); color: var(--color-ink); font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 14px; font-weight: 600; text-decoration: none; } .ds-nav a:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }"
+    },
+    {
+      "name": "Tip Card",
+      "kind": "card",
+      "refersTo": "card-tip",
+      "description": "The signature self-playing sample card, shown at rest with the sample label, handle header, amounts and submit.",
+      "html": "<div class=\"ds-tip\"><p class=\"ds-tip-sample\">Sample page. No payment is taken.</p><div class=\"ds-tip-head\"><span class=\"ds-tip-avatar\">A</span><div><p class=\"ds-tip-name\">Aarav Plays</p><p class=\"ds-tip-handle\">tipsite.in/aarav</p></div></div><div class=\"ds-tip-amounts\"><span>₹50</span><span class=\"ds-on\">₹100</span><span>₹250</span><span>₹500</span></div><button class=\"ds-tip-submit\" type=\"button\">Tip ₹100 with UPI</button></div>",
+      "css": ".ds-tip { max-width: 416px; padding: 24px; border: 1px solid color-mix(in oklab, var(--color-line) 60%, transparent); border-radius: 20px; background: var(--color-surface); color: var(--color-text); } .ds-tip-sample { margin: 0 0 20px; color: var(--color-muted); font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 14px; } .ds-tip-head { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; } .ds-tip-avatar { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 9999px; background: var(--color-accent); color: var(--color-ink); font-family: var(--font-bricolage), system-ui, sans-serif; font-stretch: 82%; font-weight: 800; letter-spacing: -0.015em; word-spacing: 0.03em; line-height: 0.98; font-size: 20px; } .ds-tip-name { margin: 0; font-family: var(--font-bricolage), system-ui, sans-serif; font-weight: 600; line-height: 1.2; } .ds-tip-handle { margin: 0; color: var(--color-muted); font-family: var(--font-geist-mono), ui-monospace, monospace; font-variant-numeric: tabular-nums; font-size: 14px; } .ds-tip-amounts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 20px; } .ds-tip-amounts span { display: flex; align-items: center; justify-content: center; height: 48px; border: 1px solid var(--color-control); border-radius: 9999px; font-family: var(--font-geist-mono), ui-monospace, monospace; font-variant-numeric: tabular-nums; font-size: 16px; } .ds-tip-amounts .ds-on { background: var(--color-accent); border-color: var(--color-accent); color: var(--color-ink); font-weight: 600; } .ds-tip-submit { width: 100%; height: 56px; border: 0; border-radius: 9999px; background: var(--color-accent); color: var(--color-ink); font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 16px; font-weight: 600; cursor: pointer; transition: transform 200ms; } .ds-tip-submit:active { transform: scale(0.98); } .ds-tip-submit:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }"
+    },
+    {
+      "name": "Stream Alert",
+      "kind": "card",
+      "refersTo": "tile-accent",
+      "description": "The sample OBS alert in the On your stream section: a full lime tile with the fan's name, the amount as a Numeral and the message beside a speaker icon. One word is shown lit, as text-to-speech reads along.",
+      "html": "<div class=\"ds-alert\" role=\"group\" aria-label=\"Sample stream alert\"><p class=\"ds-alert-label\">Sample alert. Nothing is sent to a stream.</p><div><p class=\"ds-alert-name\">Riya tipped</p><p class=\"ds-alert-amount\">₹250</p><p class=\"ds-alert-msg\"><svg viewBox=\"0 0 256 256\" width=\"32\" height=\"32\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M157.27,21.22a12,12,0,0,0-12.64,1.31L75.88,76H32A20,20,0,0,0,12,96v64a20,20,0,0,0,20,20H75.88l68.75,53.47A12,12,0,0,0,164,224V32A12,12,0,0,0,157.27,21.22ZM36,100H68v56H36Zm104,99.46L92,162.13V93.87l48-37.33ZM212,128a44,44,0,0,1-11,29.11,12,12,0,1,1-18-15.88,20,20,0,0,0,0-26.43,12,12,0,0,1,18-15.86A43.94,43.94,0,0,1,212,128Zm40,0a83.87,83.87,0,0,1-21.39,56,12,12,0,0,1-17.89-16,60,60,0,0,0,0-80,12,12,0,1,1,17.88-16A83.87,83.87,0,0,1,252,128Z\"/></svg><span><span class=\"ds-alert-word\">Great</span> <span class=\"ds-alert-word ds-on\">stream</span> <span class=\"ds-alert-word\">today!</span></span></p></div></div>",
+      "css": ".ds-alert { display: flex; flex-direction: column; justify-content: space-between; gap: 48px; max-width: 560px; min-height: 416px; padding: 40px; border-radius: 20px; background: var(--color-accent); color: var(--color-ink); } .ds-alert-label { margin: 0; font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 14px; font-weight: 600; line-height: 20px; } .ds-alert-name { margin: 0; font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 20px; font-weight: 500; line-height: 28px; } .ds-alert-amount { margin: 8px 0 0; font-family: var(--font-geist-mono), ui-monospace, monospace; font-variant-numeric: tabular-nums; font-size: 96px; font-weight: 600; line-height: 1; letter-spacing: -0.025em; } .ds-alert-msg { display: flex; align-items: flex-start; gap: 16px; margin: 24px 0 0; font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 30px; font-weight: 500; line-height: 36px; word-spacing: 0.25em; } .ds-alert-msg svg { flex: none; margin-top: 4px; } .ds-alert-word { display: inline-block; margin: 0 -8px; padding: 2px 8px; border-radius: 9999px; } .ds-alert-word.ds-on { background: var(--color-ink); color: var(--color-accent); }"
+    },
+    {
+      "name": "Fee Tile",
+      "kind": "card",
+      "refersTo": "tile-raised",
+      "description": "The raised tile that states the fee in plain words. Raised Smoke fill, Title heading, Chalk statement.",
+      "html": "<div class=\"ds-tile\"><h3 class=\"ds-tile-title\">What it costs</h3><p class=\"ds-tile-body\">We take 5% of every tip.</p></div>",
+      "css": ".ds-tile { max-width: 440px; padding: 32px; border: 1px solid var(--color-line); border-radius: 20px; background: var(--color-raised); color: var(--color-text); } .ds-tile-title { margin: 0; font-family: var(--font-bricolage), system-ui, sans-serif; font-stretch: 82%; font-weight: 800; letter-spacing: -0.015em; word-spacing: 0.03em; line-height: 0.98; font-size: 40px; } .ds-tile-body { margin: 16px 0 0; max-width: 34ch; font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 24px; font-weight: 500; line-height: 32px; text-wrap: pretty; }"
+    },
+    {
+      "name": "FAQ Row",
+      "kind": "custom",
+      "refersTo": "tile-surface",
+      "description": "Accordion row: 600-weight question, bold Plus that rotates, Hairline divider, Ash answer.",
+      "html": "<div class=\"ds-faq\"><button class=\"ds-faq-q\" type=\"button\" aria-expanded=\"true\"><span>Do fans need an account?</span><span class=\"ds-faq-plus\"><svg viewBox=\"0 0 256 256\" width=\"24\" height=\"24\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M228,128a12,12,0,0,1-12,12H140v76a12,12,0,0,1-24,0V140H40a12,12,0,0,1,0-24h76V40a12,12,0,0,1,24,0v76h76A12,12,0,0,1,228,128Z\"/></svg></span></button><p class=\"ds-faq-a\">No. A fan opens your link, picks an amount and pays with UPI or card.</p></div>",
+      "css": ".ds-faq { max-width: 640px; border-bottom: 1px solid var(--color-line); color: var(--color-text); } .ds-faq-q { display: flex; align-items: center; justify-content: space-between; gap: 24px; width: 100%; padding: 24px 0; border: 0; background: none; color: inherit; text-align: left; font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 24px; font-weight: 600; cursor: pointer; transition: color 200ms; } .ds-faq-q:hover { color: var(--color-accent); } .ds-faq-q:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; } .ds-faq-plus { display: inline-flex; transform: rotate(45deg); transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-faq-a { margin: 0; padding-bottom: 24px; max-width: 56ch; color: var(--color-muted); font-family: var(--font-bricolage), system-ui, sans-serif; font-size: 18px; line-height: 28px; text-wrap: pretty; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Moment It Lands",
+    "overview": "The whole system is a dark room with one light that switches on when money arrives. Almost everything is warm near-black, off-white type and hairlines. The single acid-lime accent is held back and then spent in full fields: the tip card flooding lime on success, the stream alert, the UPI tile, the closing section. Lime reads as an event, not a decoration.\n\nIt is flat and exact. There are no shadows, gradients, glows or blurs. Depth comes from three tonal steps, and the lime fields are the loudest layer. Type does the personality work: a condensed, heavy Bricolage Grotesque for headlines, the same family at normal width for sentences, and Geist Mono reserved for money and the handle. Motion exists to demonstrate the product. A sample card plays itself and lights the headline beats, a sample stream alert lights its message word by word, and every motion is gated off under reduced motion.\n\nThe owner pinned the direction as dark, flat and one sharp accent, and the page must not look AI-generated or templated. The system refuses the streamer-tool default of neon glow, mesh gradients and grids of feature cards.",
+    "keyCharacteristics": [
+      "Warm-tinted near-black ground with off-white text. One lime accent plus its dark ink, and no second hue.",
+      "Lime is spent as full fields or solid pills, never as glow, gradient, outline or tint.",
+      "One sans family at two widths (82% for display, 100% for text) plus a mono for money.",
+      "Flat at rest: no shadows. Three tonal steps and 1px hairlines carry structure.",
+      "Pills for actions, 20px surfaces, 12px inputs.",
+      "Motion is demonstration: expo-out reveals, a self-playing card, reduced motion honored."
+    ],
+    "rules": [
+      {
+        "name": "The Full Field Rule",
+        "body": "Lime is a surface, not a highlight. It fills a whole tile, card state, section or solid pill. It never glows, fades, outlines or tints.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink-On-Lime Rule",
+        "body": "Everything that sits on lime is Field Ink: text, borders, icons, buttons and keyboard focus rings. The `on-accent` wrapper flips the ring from lime to ink. Chalk and Ash never appear on lime.",
+        "section": "colors"
+      },
+      {
+        "name": "The Edge Rule",
+        "body": "Hairline separates and Control Edge identifies. A line a user must see to find or press a control uses Control Edge. Hairline is decoration only.",
+        "section": "colors"
+      },
+      {
+        "name": "The Money-In-Mono Rule",
+        "body": "Amount chips, the success numeral, the alert amount and the handle field are Geist Mono. Running text and button labels are not.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two-Widths Rule",
+        "body": "One sans family only: 82% width at weight 800 for display, 100% width for everything else. Never add a second sans or a serif.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat At Rest Rule",
+        "body": "Nothing casts a shadow. If a layer must stand apart, use the next tonal step or a Hairline. If it must be the event, make it a lime field.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** spend Acid Lime as a full field or a solid pill, and put Field Ink on it.",
+      "**Do** draw control edges with the Control Edge token and decoration with Hairline.",
+      "**Do** keep text on Warm Night at Ash or brighter (8.5:1 or better).",
+      "**Do** wrap lime fields in `on-accent` so keyboard focus rings flip to ink.",
+      "**Do** set headlines at 82% width and weight 800 with balanced wrapping, and body at 100% width.",
+      "**Do** gate every motion on `prefers-reduced-motion: no-preference` and leave a static equivalent.",
+      "**Do** label sample content as a sample wherever it appears."
+    ],
+    "donts": [
+      "**Don't** add shadows, gradients, glows, blurs or a second accent hue.",
+      "**Don't** use Hairline for the edge of anything a user must find or press.",
+      "**Don't** set Chalk or Ash text on Acid Lime.",
+      "**Don't** set mono outside amounts and the handle.",
+      "**Don't** add a second sans family or a serif."
+    ]
+  }
+}
