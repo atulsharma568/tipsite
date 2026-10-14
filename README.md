@@ -19,6 +19,7 @@ npm run build && npm run start
 - `src/components/hero/TipCard.tsx`: the self-playing sample tip card.
 - `src/components/hero/HeroHands.tsx` and `HeroHands.module.css`: the one-shot hand-to-hand lime ₹ note animation, with a reduced-motion still frame.
 - `src/components/sections/Differentiators.tsx`: the competitor-led "Why Tipsite" section covering no fan email/account, anonymous tips, QR-first sharing and safer approved text-to-speech.
+- `agent-skills/`: the Claude Code skills used on this project, their sources and an install script (`agent-skills/install.sh`).
 
 ## Placeholders to replace
 

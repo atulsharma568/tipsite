@@ -44,3 +44,6 @@ next-env.d.ts
 /.playwright/
 /.playwright-cli/
 /.impeccable/review/
+
+# third-party agent skills (reinstall with agent-skills/install.sh)
+/.claude/skills/
