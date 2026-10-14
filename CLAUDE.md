@@ -15,7 +15,7 @@
 2. Hero hands: polished version committed and approved "for now" on 2026-10-14; the owner said it is not yet what they imagined, so expect a revision request.
 3. Turn the claim form into a real waitlist: email plus an optional YouTube channel link. It needs somewhere to store entries; Postgres is planned.
 4. Choose the product name and domain. "Tipsite" and `tipsite.in` are placeholders.
-5. Add terms, privacy, refund and contact pages and a footer. Razorpay will likely ask for them.
+5. Legal pages drafted (2026-10-14): terms, privacy, refunds, delivery, contact and grievances, pricing, about, and a footer on every page. Before launch or a Razorpay application: the owner fills in operator details in `src/lib/legal.ts`, confirms the default timelines and the 18+ rule listed in `PROGRESS.md`, gets a lawyer to review, then sets `LEGAL_DRAFT` to false.
 6. FAQ is finished for now (2026-10-14); revisit the fee and payout answers once those decisions are made, and write the legal copy.
 7. Still undecided, so they must not appear on the page: payout timing, paid highlighted messages.
 8. Build the tip page and backend only when the owner says so.
