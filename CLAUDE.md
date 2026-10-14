@@ -9,21 +9,22 @@
 - `package-lock.json` must only reference `https://registry.npmjs.org/`; rewrite any private-mirror URLs before committing.
 - Keep the "Next steps" list below current: tick off or rewrite items as work finishes.
 
-## Next steps (as of 2026-10-13)
+## Next steps (as of 2026-10-14)
 
 1. Owner decision: do Razorpay's charges sit inside the 5% or on top of it? It decides the "what you keep" example and the fee answer in the FAQ. Put no number on the page until this is answered.
-2. Owner go/no-go on the hands prototype (see Direction below). If go: build it in the hero, check phone and desktop screenshots, and get the owner's approval before committing.
+2. Owner review of the published hands prototype in the hero (see Direction below): check phone and desktop screenshots and approve or reject it.
 3. Turn the claim form into a real waitlist: email plus an optional YouTube channel link. It needs somewhere to store entries; Postgres is planned.
 4. Choose the product name and domain. "Tipsite" and `tipsite.in` are placeholders.
 5. Add terms, privacy, refund and contact pages and a footer. Razorpay will likely ask for them.
-6. Expand the FAQ once the answers above are known.
+6. Finish the FAQ and legal copy once the answers above are known; the FAQ now covers no email, anonymous tips and approval-before-play.
 7. Still undecided, so they must not appear on the page: payout timing, paid highlighted messages, whether gateway charges sit inside the 5%.
 8. Build the tip page and backend only when the owner says so.
 
 ## Direction from the owner
 
 - The site should be clean, professional and to the point: only what is necessary, not everything the reference sites show, and something new and unique.
-- Hero animation idea (the owner's): two hands enter from opposite sides, one hands over cash, the other takes it and both pull back. Status: proposed, prototype not started.
+- Hero animation idea (the owner's): two hands enter from opposite sides, one hands over cash, the other takes it and both pull back. Status: prototype built on 2026-10-14; owner review pending.
+- Competitor-led landing direction (owner, 2026-10-14): make no fan account or email, optional anonymous tips, QR-first sharing and safer approved text-to-speech the visible reasons to choose Tipsite. The landing-page section is built; the real tip-page controls are still future work.
 - Recommended approach, not yet approved by the owner:
   - flat SVG hands in our palette (lighter and sharper than 3D or video);
   - the cash is a lime ₹ note, not a realistic bill, because the product is UPI and card;
@@ -39,7 +40,7 @@ Reviewed hyperchat.space, streamtipz.in and supertips.store: landing page, one c
 - StreamTipz: 5% or 7% through prepaid "Alert Tokens" (its fee pages disagree). UPI only, fan email required, 30-character messages, a savings calculator.
 - SuperTips: Free plan at 8%, Pro at ₹999/month for 6%. UPI only. OBS alerts, goals, leaderboard, fan CRM, banned words, 150-character messages. The fan form pre-selects ₹200 and requires an email.
 
-Where we can be clearly better (proposed):
+Where we can be clearly better (landing direction, owner-approved 2026-10-14):
 
 1. One flat, plainly stated fee (5% of every tip) with a worked example, once the gateway-charge question is answered.
 2. UPI and card, no fan email, an optional anonymous tip.
@@ -48,9 +49,9 @@ Where we can be clearly better (proposed):
 5. Honest trust: samples labelled as samples, real names and numbers only once they exist, plus company, contact, terms, privacy and refund details.
 6. A clean phone layout (ours has no overflow from 320 to 1440px) and a look that cannot be confused with theirs (near-black and lime against their violet, cyan and light blue).
 
-## Proposed scope (recommendations the owner has not approved yet)
+## Current landing scope (owner direction, 2026-10-14)
 
-Landing page, five short sections: hero (headline, sample tip card, the hands) → how it works (3 steps) → on your stream (sample OBS alert) → fees ("5% of every tip" plus a small "what you keep" example) → FAQ, a real waitlist form and a footer with contact, terms and privacy.
+Landing page, short sections: hero (headline, sample tip card, the hands) → how it works (3 steps) → on your stream (sample OBS alert) → why Tipsite (no fan email/account, anonymous option, UPI + card, QR-first sharing, safer approved text-to-speech) → fees ("5% of every tip" plus a small "what you keep" example once gateway charges are answered) → FAQ, a real waitlist form and a footer with contact, terms and privacy.
 
 Leave out: counters and "10,000+ creators" strips, logo walls, testimonials we do not have, a grid of every feature, jargon, naming competitors, pop-ups. Soundboards, XP levels, leaderboards and fan CRM stay off the page.
 
