@@ -12,18 +12,19 @@
 ## Next steps (as of 2026-10-14)
 
 1. Owner decision: do Razorpay's charges sit inside the 5% or on top of it? It decides the "what you keep" example and the fee answer in the FAQ. Put no number on the page until this is answered.
-2. Owner review of the published hands prototype in the hero (see Direction below): check phone and desktop screenshots and approve or reject it.
+2. Hero hands: polished version committed and approved "for now" on 2026-10-14; the owner said it is not yet what they imagined, so expect a revision request.
 3. Turn the claim form into a real waitlist: email plus an optional YouTube channel link. It needs somewhere to store entries; Postgres is planned.
 4. Choose the product name and domain. "Tipsite" and `tipsite.in` are placeholders.
 5. Add terms, privacy, refund and contact pages and a footer. Razorpay will likely ask for them.
-6. Finish the FAQ and legal copy once the answers above are known; the FAQ now covers no email, anonymous tips and approval-before-play.
+6. FAQ is finished for now (2026-10-14); revisit the fee and payout answers once those decisions are made, and write the legal copy.
 7. Still undecided, so they must not appear on the page: payout timing, paid highlighted messages, whether gateway charges sit inside the 5%.
 8. Build the tip page and backend only when the owner says so.
+9. Competitor teardown with REA (`npx -y --registry=https://registry.npmjs.org/ rea-agents@6.4.0`, visitor-only, throwaway Chrome profile, outputs outside the repo): Hyperchat done; SuperTips then StreamTipz paused until the owner says go; then a ranked build-first/later/left-out list.
 
 ## Direction from the owner
 
 - The site should be clean, professional and to the point: only what is necessary, not everything the reference sites show, and something new and unique.
-- Hero animation idea (the owner's): two hands enter from opposite sides, one hands over cash, the other takes it and both pull back. Status: prototype built on 2026-10-14; owner review pending.
+- Hero animation idea (the owner's): two hands enter from opposite sides, one hands over cash, the other takes it and both pull back. Status: GSAP SVG version committed on 2026-10-14, approved "for now"; may be revised.
 - Competitor-led landing direction (owner, 2026-10-14): make no fan account or email, optional anonymous tips, QR-first sharing and safer approved text-to-speech the visible reasons to choose Tipsite. The landing-page section is built; the real tip-page controls are still future work.
 - Recommended approach, not yet approved by the owner:
   - flat SVG hands in our palette (lighter and sharper than 3D or video);
