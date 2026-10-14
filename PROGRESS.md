@@ -42,7 +42,7 @@ The landing page presents these as samples or planned product behavior. It does 
 
 - Tips by UPI or card, no fan account. Payments through Razorpay with INR payouts (planned, not integrated).
 - OBS stream alerts and text-to-speech of the fan's message, so fans can add an optional name and message.
-- Platform fee: 5% of every tip.
+- Platform fee: 5% of every tip. Razorpay's charges sit on top of the 5% and are paid by the creator out of the payout; fans pay exactly the tip (owner, 2026-10-14). At Razorpay's standard rate (2% + 18% GST on that charge) a ₹100 tip leaves the creator ₹92.64.
 - Product edges to carry into the future tip page: no fan email, anonymous tips, QR-first sharing, message limits, profanity/banned-word screening and creator approval before text-to-speech.
 - Look: dark, flat, one lime accent.
 - Audience: Indian live streamers first.
@@ -51,7 +51,6 @@ The landing page presents these as samples or planned product behavior. It does 
 
 ## Open questions
 
-- Does the 5% include Razorpay's payment charges, or are they on top?
 - Hands animation in the hero: the polished version is committed "for now" (owner, 2026-10-14). The owner said it is not what they imagined, so a further revision may follow.
 - Payout timing, paid highlighted messages, product name and domain, sign-up and sign-in mechanism (email code, password or Google).
 - Exact message length, moderation settings and the approval interface for text-to-speech (needed with the tip page).
@@ -91,3 +90,4 @@ Finished, verified changes (lint, type check and build pass) are committed and p
 - 2026-10-14: reviewed ThreeUI's hero, landing-page and motion-design templates (almost all Pro, Three.js and glow-heavy, so none used directly) and built four of their ideas flat with GSAP: a fan of labelled sample alerts behind the hero card that deals a new alert after each sample tip (1280px+), a rolling "5%" fee odometer, a pinned sideways steps rail with a lime progress line (now four steps, adding "Go live"), and a stream screen that tilts flat on scroll. Installed Emil Kowalski's skills (pinned in `agent-skills/install.sh`); Taste Skill was already at its latest commit. Lint, typecheck, build and `git diff --check` passed.
 - 2026-10-14: rebuilt five ThreeUI pieces the owner asked for, lighter and in our own code, with lime glow allowed only on them (owner-approved exception to the flat rule): a glass orb "Claim your handle" in the nav, a plasma canvas "Tip anonymously" switch, a frosted nav capsule whose links spring like a dock, a full uplink panel that counts the sample tip out before the success flood, and a ring of lime notes and coins circling a glitching "Tipsite" wordmark above the closing claim form. The odometer amount was not removed; it still lands on the success screen. Canvases pause off screen and reduced motion shows still frames. Checked at 1440, 390 and 320 (no horizontal overflow) and under reduced motion. Lint, typecheck, build and `git diff --check` passed.
 - 2026-10-14: added Sign in (glass orb) and Sign up (a chrome button rebuilt from ThreeUI's get-started button) to the nav, plus `/signup` (handle, email, optional YouTube channel) and `/signin` (email) pages that say accounts aren't open yet and save or send nothing. The `tipsite.in/yourname` field now types out sample handles, builds a live link chip as you type and sweeps a scan on submit. On stream gained sample settings (show alerts, read aloud, approve-first) that change the sample alert live, with an approval queue; the steps and FAQ copy now say these are the creator's choice, approve-first on by default. Motion follows the installed Emil Kowalski skills (short ease-out UI transitions, press feedback, interruptible). Checked at 1440, 390 and 320 (no horizontal overflow) and under reduced motion. Lint, typecheck, build and `git diff --check` passed.
+- 2026-10-14: owner decided that Razorpay's charges sit on top of the 5% and are paid by the creator from the payout. The fee tile now shows a worked ₹100 example (₹5 our fee, ₹2.36 Razorpay at its standard 2% + 18% GST, ₹92.64 to the creator) and the FAQ says the same. Also finished visitor-only legal/contact teardowns of SuperTips and StreamTipz with REA (outputs and a summary kept outside the repo) for the upcoming legal pages. Lint, typecheck, build and `git diff --check` passed.

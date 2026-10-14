@@ -11,15 +11,15 @@
 
 ## Next steps (as of 2026-10-14)
 
-1. Owner decision: do Razorpay's charges sit inside the 5% or on top of it? It decides the "what you keep" example and the fee answer in the FAQ. Put no number on the page until this is answered.
+1. Decided: Razorpay's charges sit on top of the 5% and are paid by the creator out of the payout; fans pay exactly the tip (owner, 2026-10-14). At Razorpay's standard rate (2% + 18% GST on that charge) a ₹100 tip leaves the creator ₹92.64. The worked example is on the fee tile and in the FAQ; re-check Razorpay's rate before launch.
 2. Hero hands: polished version committed and approved "for now" on 2026-10-14; the owner said it is not yet what they imagined, so expect a revision request.
 3. Turn the claim form into a real waitlist: email plus an optional YouTube channel link. It needs somewhere to store entries; Postgres is planned.
 4. Choose the product name and domain. "Tipsite" and `tipsite.in` are placeholders.
 5. Add terms, privacy, refund and contact pages and a footer. Razorpay will likely ask for them.
 6. FAQ is finished for now (2026-10-14); revisit the fee and payout answers once those decisions are made, and write the legal copy.
-7. Still undecided, so they must not appear on the page: payout timing, paid highlighted messages, whether gateway charges sit inside the 5%.
+7. Still undecided, so they must not appear on the page: payout timing, paid highlighted messages.
 8. Build the tip page and backend only when the owner says so.
-9. Competitor teardown with REA (`npx -y --registry=https://registry.npmjs.org/ rea-agents@6.4.0`, visitor-only, throwaway Chrome profile, outputs outside the repo): Hyperchat done; SuperTips then StreamTipz paused until the owner says go; then a ranked build-first/later/left-out list.
+9. Competitor teardown with REA (`rea-agents@6.4.0`, visitor-only, outputs outside the repo): Hyperchat done; SuperTips and StreamTipz legal/contact pages done (2026-10-14), summary at `/tmp/competitors-rea/legal-synthesis.md` on the owner's machine. Still to do when the owner asks: a ranked build-first/later/left-out feature list.
 10. Owner decision: how creators sign in (email code, password, Google). `/signin` and `/signup` exist as stubs that save and send nothing; real accounts need this and the backend.
 
 ## Direction from the owner
@@ -64,7 +64,7 @@ The landing page now shows the adopted strengths and our own edges as labelled s
 
 Where we can be clearly better (landing direction, owner-approved 2026-10-14):
 
-1. One flat, plainly stated fee (5% of every tip) with a worked example, once the gateway-charge question is answered.
+1. One flat, plainly stated fee (5% of every tip) with a worked example (built: ₹100 → ₹92.64 after our 5% and Razorpay's charge).
 2. UPI and card, no fan email, an optional anonymous tip.
 3. Safe text-to-speech: message limit, profanity filter, banned words, approve-before-play.
 4. A QR code per streamer to show on stream (none of the three showed one).
@@ -75,7 +75,7 @@ Where we can be clearly better (landing direction, owner-approved 2026-10-14):
 
 Implemented sections: hero (headline, self-playing sample tip card, handoff animation, sample alert fan on wide screens) → how it works (4 steps: claim, share, go live, get paid) → on your stream (sample OBS alert) → why Tipsite (no fan email/account, anonymous option, UPI + card, labelled sample QR, safer approved text-to-speech) → fees ("5% of every tip") → FAQ → closing claim form stub and footer navigation.
 
-Still planned: a real waitlist with storage, legal/contact pages, the worked fee example after the gateway-charge decision, the fan tip page, creator dashboard, backend and payments.
+Still planned: a real waitlist with storage, legal/contact pages, the fan tip page, creator dashboard, backend and payments.
 
 Leave out: counters and "10,000+ creators" strips, logo walls, testimonials we do not have, a grid of every feature, jargon, naming competitors, pop-ups. Soundboards, XP levels, leaderboards and fan CRM stay off the page.
 
