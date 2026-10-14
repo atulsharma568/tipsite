@@ -27,6 +27,9 @@ All sources were reviewed on 2026-10-14 at the pinned commit.
 | design, design-system, ui-styling, brand, banner-design, slides | same repo | Logos and brand identity, tokens, shadcn/Tailwind, brand guidelines, banners, slides |
 | design-taste-frontend (+ v1), high-end-visual-design, minimalist-ui, industrial-brutalist-ui, gpt-taste, stitch-design-taste, redesign-existing-projects, full-output-enforcement | [Leonxlnx/taste-skill](https://github.com/Leonxlnx/taste-skill) | Art direction for landing pages in several styles |
 | image-to-code, imagegen-frontend-web, imagegen-frontend-mobile, brandkit | same repo | Image-led design; need an image-generation tool |
+| emil-design-eng, animate, animation-vocabulary, animation-performance, improve-animations, review-animations, find-animation-opportunities | [emilkowalski/skills](https://github.com/emilkowalski/skills) | Emil Kowalski's design-engineering and motion craft: easing, timing, performance, audits |
+| apple-design, break-ui, prototype, pick-ui-library, ask-sonner | same repo | Apple-style interface rules, edge-case stress tests, quick prototypes, library picks, the Sonner toast library |
+| animate-expo, mobile-native, write-swift | same repo | Expo/React Native and Swift; not used by this web project |
 | frontend-design | [anthropics/skills](https://github.com/anthropics/skills) | Anthropic's frontend design skill |
 | bencium-controlled-ux-designer, bencium-innovative-ux-designer | [bencium/bencium-claude-code-design-skill](https://github.com/bencium/bencium-claude-code-design-skill) | UX, accessibility, responsive and motion specs; asks before design decisions |
 | img2threejs | [img2threejs/img2threejs](https://github.com/img2threejs/img2threejs) | Rebuilds an object from an image as a Three.js model |
@@ -60,6 +63,7 @@ Built into Claude Code, so not listed here: claude-api, update-config, keybindin
 - **playwright-cli**: needs `npm install -g @playwright/cli`. Its `allowed-tools` line pre-approves every `playwright-cli` command.
 - **img2threejs**: installed by copying only the skill files. Its `npx img2threejs install` links it into every agent's global skills folder.
 - **task-observer**: does nothing until an activation line is added to `CLAUDE.md` or a session-start hook is set up; neither is done here.
+- **emilkowalski/skills** (added 2026-10-14): markdown only, MIT; no scripts, hooks or network calls. Its "pick-ui-library" suggests packages (motion, NumberFlow and others); this project uses GSAP, so check with the owner before adding a library.
 - **find-skills**: its install step uses `npx skills add <pkg> -g -y` (global, no prompt). Install suggestions into this project instead.
 
 ## Not installed

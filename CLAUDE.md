@@ -72,7 +72,7 @@ Where we can be clearly better (landing direction, owner-approved 2026-10-14):
 
 ## Current landing scope (owner direction, 2026-10-14)
 
-Implemented sections: hero (headline, self-playing sample tip card, handoff animation) → how it works (3 steps) → on your stream (sample OBS alert) → why Tipsite (no fan email/account, anonymous option, UPI + card, labelled sample QR, safer approved text-to-speech) → fees ("5% of every tip") → FAQ → closing claim form stub and footer navigation.
+Implemented sections: hero (headline, self-playing sample tip card, handoff animation, sample alert fan on wide screens) → how it works (4 steps: claim, share, go live, get paid) → on your stream (sample OBS alert) → why Tipsite (no fan email/account, anonymous option, UPI + card, labelled sample QR, safer approved text-to-speech) → fees ("5% of every tip") → FAQ → closing claim form stub and footer navigation.
 
 Still planned: a real waitlist with storage, legal/contact pages, the worked fee example after the gateway-charge decision, the fan tip page, creator dashboard, backend and payments.
 
@@ -89,7 +89,7 @@ Optional idea: a "try it" box where a visitor types a name and message, sees the
 ## UI references (owner, 2026-10-14)
 
 - The owner shared threeui.com, 21st.dev, tasteskill.dev and gsap.com as references. ThreeUI is paid (Pro) and heavy (Three.js, about 55 MB package); 21st.dev licences vary by author. Use both only as visual inspiration and write our own code, since this repo is public.
-- Built so far (owner-picked): the flat beam button, the "Tip anonymously" switch in the sample card, the stepped-ticks loader on the card's sending step (reuse it for the waitlist submit), and the letter-roll hover on pill buttons. Also built (owner-picked from ThreeUI): odometer reels for the success amount, a floating capsule nav with a sliding lime link highlight, and an arrow-endcap hero CTA.
+- Built so far (owner-picked): the flat beam button, the "Tip anonymously" switch in the sample card, the stepped-ticks loader on the card's sending step (reuse it for the waitlist submit), and the letter-roll hover on pill buttons. Also built (owner-picked from ThreeUI): odometer reels for the success amount, a floating capsule nav with a sliding lime link highlight, and an arrow-endcap hero CTA. From ThreeUI's (Pro, Three.js) hero and motion pages, adapted flat: a fanned stack of sample alerts behind the hero card, a rolling "5%" fee odometer, a pinned sideways steps rail with a lime progress line, and a stream screen that tilts flat on scroll.
 - Keep everything flat (owner confirmed): no glow, blended gradient or shadow. Taste Skill is installed but bans monospace; DESIGN.md wins where they disagree.
 - GSAP 3.15 in `node_modules` includes SplitText, DrawSVG, MorphSVG, Flip and CustomEase at no cost; only ScrollTrigger is registered today.
 
