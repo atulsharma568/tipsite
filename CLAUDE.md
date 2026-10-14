@@ -20,6 +20,7 @@
 7. Still undecided, so they must not appear on the page: payout timing, paid highlighted messages, whether gateway charges sit inside the 5%.
 8. Build the tip page and backend only when the owner says so.
 9. Competitor teardown with REA (`npx -y --registry=https://registry.npmjs.org/ rea-agents@6.4.0`, visitor-only, throwaway Chrome profile, outputs outside the repo): Hyperchat done; SuperTips then StreamTipz paused until the owner says go; then a ranked build-first/later/left-out list.
+10. Owner decision: how creators sign in (email code, password, Google). `/signin` and `/signup` exist as stubs that save and send nothing; real accounts need this and the backend.
 
 ## Direction from the owner
 
@@ -91,7 +92,8 @@ Optional idea: a "try it" box where a visitor types a name and message, sees the
 - The owner shared threeui.com, 21st.dev, tasteskill.dev and gsap.com as references. ThreeUI is paid (Pro) and heavy (Three.js, about 55 MB package); 21st.dev licences vary by author. Use both only as visual inspiration and write our own code, since this repo is public.
 - Built so far (owner-picked): the flat beam button, the "Tip anonymously" switch in the sample card, the stepped-ticks loader on the card's sending step (reuse it for the waitlist submit), and the letter-roll hover on pill buttons. Also built (owner-picked from ThreeUI): odometer reels for the success amount, a floating capsule nav with a sliding lime link highlight, and an arrow-endcap hero CTA. From ThreeUI's (Pro, Three.js) hero and motion pages, adapted flat: a fanned stack of sample alerts behind the hero card, a rolling "5%" fee odometer, a pinned sideways steps rail with a lime progress line, and a stream screen that tilts flat on scroll.
 - Also built (owner request, rebuilt lighter in our own code from ThreeUI's glass AI button, skeuomorphic shader toggle, Sable top dock, uplink loader and falling-diagonal heading): a glass orb nav CTA, a plasma "Tip anonymously" switch, a frosted nav capsule with dock-style link spring, a full uplink sending panel over the tip card, and a money orbit around a glitching wordmark at the top of the closing section.
-- Flat by default, with one owner-approved exception (2026-10-14): those five glow pieces may glow, always in lime. Everything else stays flat. Taste Skill is installed but bans monospace; DESIGN.md wins where they disagree.
+- Also built (owner request): Sign in (glass orb) and Sign up (a chrome button rebuilt from ThreeUI's get-started button) in the nav, `/signup` and `/signin` pages that say accounts aren't open yet, a typing `tipsite.in/yourname` field with a live link chip, and sample stream settings (alerts on stream, text-to-speech, approve-first) that drive the On stream sample.
+- Flat by default, with one owner-approved exception (2026-10-14): those glow pieces (plus the chrome button and the handle field's focus glow) may glow, always in lime. Everything else stays flat. Taste Skill is installed but bans monospace; DESIGN.md wins where they disagree.
 - GSAP 3.15 in `node_modules` includes SplitText, DrawSVG, MorphSVG, Flip and CustomEase at no cost; only ScrollTrigger is registered today.
 
 ## Tooling note
