@@ -89,7 +89,7 @@ Optional idea: a "try it" box where a visitor types a name and message, sees the
 ## UI references (owner, 2026-10-14)
 
 - The owner shared threeui.com, 21st.dev, tasteskill.dev and gsap.com as references. ThreeUI is paid (Pro) and heavy (Three.js, about 55 MB package); 21st.dev licences vary by author. Use both only as visual inspiration and write our own code, since this repo is public.
-- Built so far: the flat beam button (owner-picked). Shortlisted but not chosen yet: a flat "Tip anonymously" sliding toggle in the sample card, a stepped-ticks loader (tip success and waitlist submit), and a letter-roll hover on pill buttons.
+- Built so far (owner-picked): the flat beam button, the "Tip anonymously" switch in the sample card, the stepped-ticks loader on the card's sending step (reuse it for the waitlist submit), and the letter-roll hover on pill buttons. Proposed next from ThreeUI, awaiting the owner: rolling odometer digits for the success amount, a floating capsule nav on scroll, and an arrow-endcap primary CTA.
 - Keep everything flat (owner confirmed): no glow, blended gradient or shadow. Taste Skill is installed but bans monospace; DESIGN.md wins where they disagree.
 - GSAP 3.15 in `node_modules` includes SplitText, DrawSVG, MorphSVG, Flip and CustomEase at no cost; only ScrollTrigger is registered today.
 
