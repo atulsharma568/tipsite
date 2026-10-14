@@ -40,6 +40,26 @@ Reviewed hyperchat.space, streamtipz.in and supertips.store: landing page, one c
 - StreamTipz: 5% or 7% through prepaid "Alert Tokens" (its fee pages disagree). UPI only, fan email required, 30-character messages, a savings calculator.
 - SuperTips: Free plan at 8%, Pro at ₹999/month for 6%. UPI only. OBS alerts, goals, leaderboard, fan CRM, banned words, 150-character messages. The fan form pre-selects ₹200 and requires an email.
 
+## Competitor decisions (2026-10-14)
+
+### Strengths we kept or adapted
+
+- A short creator link and a simple fan path from link to tip.
+- UPI as the primary Indian payment method, plus card payment in the same flow.
+- OBS alerts with the fan's name, amount and message.
+- Text-to-speech as a stream feature, paired with message moderation rather than treating every message as safe.
+- Clear sample amounts and message limits so the fan form is easy to understand.
+
+### Weaknesses and defaults we rejected
+
+- No fan email requirement and no fan account requirement.
+- No UPI-only flow; card support remains part of the planned product.
+- No conflicting fee or payout claims; the page says only the confirmed 5% platform fee.
+- No fabricated creator counts, testimonials, logos, payout timing or customer proof.
+- No soundboard, XP, leaderboard, fan CRM, paid highlighted messages or large feature catalogue in the first landing page.
+
+The landing page now shows the adopted strengths and our own edges as labelled samples or product direction. The actual payment, moderation, approval and creator tools are still future work.
+
 Where we can be clearly better (landing direction, owner-approved 2026-10-14):
 
 1. One flat, plainly stated fee (5% of every tip) with a worked example, once the gateway-charge question is answered.
@@ -51,7 +71,9 @@ Where we can be clearly better (landing direction, owner-approved 2026-10-14):
 
 ## Current landing scope (owner direction, 2026-10-14)
 
-Landing page, short sections: hero (headline, sample tip card, the hands) → how it works (3 steps) → on your stream (sample OBS alert) → why Tipsite (no fan email/account, anonymous option, UPI + card, QR-first sharing, safer approved text-to-speech) → fees ("5% of every tip" plus a small "what you keep" example once gateway charges are answered) → FAQ, a real waitlist form and a footer with contact, terms and privacy.
+Implemented sections: hero (headline, self-playing sample tip card, handoff animation) → how it works (3 steps) → on your stream (sample OBS alert) → why Tipsite (no fan email/account, anonymous option, UPI + card, labelled sample QR, safer approved text-to-speech) → fees ("5% of every tip") → FAQ → closing claim form stub and footer navigation.
+
+Still planned: a real waitlist with storage, legal/contact pages, the worked fee example after the gateway-charge decision, the fan tip page, creator dashboard, backend and payments.
 
 Leave out: counters and "10,000+ creators" strips, logo walls, testimonials we do not have, a grid of every feature, jargon, naming competitors, pop-ups. Soundboards, XP levels, leaderboards and fan CRM stay off the page.
 
