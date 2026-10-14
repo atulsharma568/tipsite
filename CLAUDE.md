@@ -90,7 +90,8 @@ Optional idea: a "try it" box where a visitor types a name and message, sees the
 
 - The owner shared threeui.com, 21st.dev, tasteskill.dev and gsap.com as references. ThreeUI is paid (Pro) and heavy (Three.js, about 55 MB package); 21st.dev licences vary by author. Use both only as visual inspiration and write our own code, since this repo is public.
 - Built so far (owner-picked): the flat beam button, the "Tip anonymously" switch in the sample card, the stepped-ticks loader on the card's sending step (reuse it for the waitlist submit), and the letter-roll hover on pill buttons. Also built (owner-picked from ThreeUI): odometer reels for the success amount, a floating capsule nav with a sliding lime link highlight, and an arrow-endcap hero CTA. From ThreeUI's (Pro, Three.js) hero and motion pages, adapted flat: a fanned stack of sample alerts behind the hero card, a rolling "5%" fee odometer, a pinned sideways steps rail with a lime progress line, and a stream screen that tilts flat on scroll.
-- Keep everything flat (owner confirmed): no glow, blended gradient or shadow. Taste Skill is installed but bans monospace; DESIGN.md wins where they disagree.
+- Also built (owner request, rebuilt lighter in our own code from ThreeUI's glass AI button, skeuomorphic shader toggle, Sable top dock, uplink loader and falling-diagonal heading): a glass orb nav CTA, a plasma "Tip anonymously" switch, a frosted nav capsule with dock-style link spring, a full uplink sending panel over the tip card, and a money orbit around a glitching wordmark at the top of the closing section.
+- Flat by default, with one owner-approved exception (2026-10-14): those five glow pieces may glow, always in lime. Everything else stays flat. Taste Skill is installed but bans monospace; DESIGN.md wins where they disagree.
 - GSAP 3.15 in `node_modules` includes SplitText, DrawSVG, MorphSVG, Flip and CustomEase at no cost; only ScrollTrigger is registered today.
 
 ## Tooling note
