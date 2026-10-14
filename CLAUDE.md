@@ -14,13 +14,14 @@
 1. Decided: Razorpay's charges sit on top of the 5% and are paid by the creator out of the payout; fans pay exactly the tip (owner, 2026-10-14). At Razorpay's standard rate (2% + 18% GST on that charge) a ₹100 tip leaves the creator ₹92.64. The worked example is on the fee tile and in the FAQ; re-check Razorpay's rate before launch.
 2. Hero hands: polished version committed and approved "for now" on 2026-10-14; the owner said it is not yet what they imagined, so expect a revision request.
 3. Waitlist built (2026-10-14): the closing form and `/signup` save to Postgres through a Server Action. Owner to do: create the Neon database, run `db/schema.sql`, add `DATABASE_URL`, `WAITLIST_SALT` and `CRON_SECRET` in Vercel (steps in `PROGRESS.md`). Launch emails to the list are not built.
-4. Choose the product name and domain. "Tipsite" and `tipsite.in` are placeholders.
+4. Choose the product name and domain. "Tipsite" and `tipsite.in` are placeholders. When the domain is live, set `NEXT_PUBLIC_SITE_URL` in Vercel (robots.txt blocks search engines until then) and run PageSpeed Insights on it.
 5. Legal pages drafted (2026-10-14): terms, privacy, refunds, delivery, contact and grievances, pricing, about, and a footer on every page. Before launch or a Razorpay application: the owner fills in operator details in `src/lib/legal.ts`, confirms the default timelines and the 18+ rule listed in `PROGRESS.md`, gets a lawyer to review, then sets `LEGAL_DRAFT` to false.
 6. FAQ is finished for now (2026-10-14); revisit the fee and payout answers once those decisions are made, and write the legal copy.
 7. Still undecided, so they must not appear on the page: payout timing, paid highlighted messages.
 8. Build the tip page and backend only when the owner says so.
 9. Competitor teardown with REA (`rea-agents@6.4.0`, visitor-only, outputs outside the repo): Hyperchat done; SuperTips and StreamTipz legal/contact pages done (2026-10-14), summary at `/tmp/competitors-rea/legal-synthesis.md` on the owner's machine. Still to do when the owner asks: a ranked build-first/later/left-out feature list.
 10. Owner decision: how creators sign in (email code, password, Google). `/signup` is the waitlist and `/signin` a stub that sends nothing; real accounts need this and the backend.
+11. Owner to check the site on a real phone (Android and, if possible, an iPhone) with the checklist given on 2026-10-14; the emulated low-end Android pass is done and logged in `PROGRESS.md`.
 
 ## Direction from the owner
 
