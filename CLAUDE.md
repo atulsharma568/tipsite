@@ -86,6 +86,13 @@ Product, first version (when the tip page is built):
 
 Optional idea: a "try it" box where a visitor types a name and message, sees the alert and hears it read aloud (the browser can speak, so no backend is needed).
 
+## UI references (owner, 2026-10-14)
+
+- The owner shared threeui.com, 21st.dev, tasteskill.dev and gsap.com as references. ThreeUI is paid (Pro) and heavy (Three.js, about 55 MB package); 21st.dev licences vary by author. Use both only as visual inspiration and write our own code, since this repo is public.
+- Built so far: the flat beam button (owner-picked). Shortlisted but not chosen yet: a flat "Tip anonymously" sliding toggle in the sample card, a stepped-ticks loader (tip success and waitlist submit), and a letter-roll hover on pill buttons.
+- Keep everything flat (owner confirmed): no glow, blended gradient or shadow. Taste Skill is installed but bans monospace; DESIGN.md wins where they disagree.
+- GSAP 3.15 in `node_modules` includes SplitText, DrawSVG, MorphSVG, Flip and CustomEase at no cost; only ScrollTrigger is registered today.
+
 ## Tooling note
 
 The Claude Code advisor tool (`/advisor`) is not available in the owner's setup: an environment setting that turns off experimental beta features also hides it. Do not spend time installing or enabling it. If the owner wants a stronger model for a hard task (for example the payment flow), suggest `/model opus`.
