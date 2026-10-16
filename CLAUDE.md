@@ -9,11 +9,11 @@
 - `package-lock.json` must only reference `https://registry.npmjs.org/`; rewrite any private-mirror URLs before committing.
 - Keep the "Next steps" list below current: tick off or rewrite items as work finishes.
 
-## Next steps (as of 2026-10-14)
+## Next steps (as of 2026-10-16)
 
 1. Decided: Razorpay's charges sit on top of the 5% and are paid by the creator out of the payout; fans pay exactly the tip (owner, 2026-10-14). At Razorpay's standard rate (2% + 18% GST on that charge) a ₹100 tip leaves the creator ₹92.64. The worked example is on the fee tile and in the FAQ; re-check Razorpay's rate before launch.
 2. Hero hands: polished version committed and approved "for now" on 2026-10-14; the owner said it is not yet what they imagined, so expect a revision request.
-3. Waitlist built (2026-10-14): the closing form and `/signup` save to Postgres through a Server Action. Owner to do: create the Neon database, run `db/schema.sql`, add `DATABASE_URL`, `WAITLIST_SALT` and `CRON_SECRET` in Vercel (steps in `PROGRESS.md`). Launch emails to the list are not built.
+3. Waitlist live (2026-10-16): deployed at https://tipsite.vercel.app (Vercel, server in Singapore `sin1`) with Neon Postgres in AWS Singapore. Owner to do: one real sign-up in a browser, confirm the row in Neon, then delete the test row; run PageSpeed Insights and a WhatsApp link preview on the vercel.app address. Launch emails to the list are not built.
 4. Choose the product name and domain. "Tipsite" and `tipsite.in` are placeholders. When the domain is live, set `NEXT_PUBLIC_SITE_URL` in Vercel (robots.txt blocks search engines until then) and run PageSpeed Insights on it.
 5. Legal pages drafted (2026-10-14): terms, privacy, refunds, delivery, contact and grievances, pricing, about, and a footer on every page. Before launch or a Razorpay application: the owner fills in operator details in `src/lib/legal.ts`, confirms the default timelines and the 18+ rule listed in `PROGRESS.md`, gets a lawyer to review, then sets `LEGAL_DRAFT` to false.
 6. FAQ is finished for now (2026-10-14); revisit the fee and payout answers once those decisions are made, and write the legal copy.
