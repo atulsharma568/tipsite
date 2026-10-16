@@ -51,3 +51,6 @@ next-env.d.ts
 # third-party agent skills (reinstall with agent-skills/install.sh)
 /.claude/skills/
 /.claude/settings.local.json
+
+# design reference copies (refetch: see agent-skills/README.md)
+/design-refs/

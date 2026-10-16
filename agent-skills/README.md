@@ -66,6 +66,15 @@ Built into Claude Code, so not listed here: claude-api, update-config, keybindin
 - **emilkowalski/skills** (added 2026-10-14): markdown only, MIT; no scripts, hooks or network calls. Its "pick-ui-library" suggests packages (motion, NumberFlow and others); this project uses GSAP, so check with the owner before adding a library.
 - **find-skills**: its install step uses `npx skills add <pkg> -g -y` (global, no prompt). Install suggestions into this project instead.
 
+## Reference material (not skills)
+
+- **awesome-design-md** ([VoltAgent/awesome-design-md](https://github.com/VoltAgent/awesome-design-md), MIT): DESIGN.md write-ups of 84 well-known brands' design systems. It has no skill file, so it is kept as a local copy in `design-refs/awesome-design-md/` (git-ignored), reviewed on 2026-10-16 at commit `3b605329240ce735b510037cca322f1831fdd7f8`: markdown only, no scripts. Use it for principles, never to copy a brand's look; our own `DESIGN.md` wins, and Tipsite must not be mistaken for another brand. Several files say to run `npx @google/design.md lint`, which is unpinned; don't run it. To refetch:
+
+  ```bash
+  git clone https://github.com/VoltAgent/awesome-design-md.git design-refs/awesome-design-md
+  git -C design-refs/awesome-design-md checkout 3b605329240ce735b510037cca322f1831fdd7f8
+  ```
+
 ## Not installed
 
 - **agent-reach** ([Panniantong/Agent-Reach](https://github.com/Panniantong/Agent-Reach)): installed, then removed. It pulls many unpinned tools, uses logged-in browser sessions and cookies, and claims every web lookup.
