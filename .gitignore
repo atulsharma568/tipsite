@@ -54,3 +54,5 @@ next-env.d.ts
 
 # design reference copies (refetch: see agent-skills/README.md)
 /design-refs/
+
+waitlist-*.csv
