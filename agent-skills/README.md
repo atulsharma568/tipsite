@@ -60,11 +60,17 @@ Built into Claude Code, so not listed here: claude-api, update-config, keybindin
 - **web-design-guidelines**: fetches its rules from Vercel's GitHub each time it runs.
 - **AccessLint**: scans run `npx -y @accesslint/cli@latest` and `@accesslint/chrome@latest`. Only the skills are installed; the plugin's MCP server is not.
 - **graphify**: needs the `graphifyy` Python package (Python 3.10+). Only the skill text is installed; do not run `graphify install` or `graphify claude install`, which edit the global `~/.claude/CLAUDE.md` and add hooks.
-- **playwright-cli**: needs `npm install -g @playwright/cli`. Its `allowed-tools` line pre-approves every `playwright-cli` command.
+- **playwright-cli**: the command is installed globally, pinned and from the public registry with install scripts off: `npm install -g @playwright/cli@0.1.22 --registry=https://registry.npmjs.org/ --ignore-scripts` (done 2026-10-16). Playwright's browser download is blocked on the owner's network, so use the installed Chrome: `playwright-cli open --browser=chrome <url>`. Snapshots land in the git-ignored `.playwright-cli/`. Its `allowed-tools` line pre-approves every `playwright-cli` command.
 - **img2threejs**: installed by copying only the skill files. Its `npx img2threejs install` links it into every agent's global skills folder.
 - **task-observer**: does nothing until an activation line is added to `CLAUDE.md` or a session-start hook is set up; neither is done here.
 - **emilkowalski/skills** (added 2026-10-14): markdown only, MIT; no scripts, hooks or network calls. Its "pick-ui-library" suggests packages (motion, NumberFlow and others); this project uses GSAP, so check with the owner before adding a library.
 - **find-skills**: its install step uses `npx skills add <pkg> -g -y` (global, no prompt). Install suggestions into this project instead.
+
+## Tools outside the skills folder (reviewed 2026-10-16)
+
+- **Context7** ([upstash/context7](https://github.com/upstash/context7), MIT): up-to-date library docs for the agent, used through Upstash's hosted MCP server, so nothing runs locally. Project config is `.mcp.json` with `{"mcpServers":{"context7":{"type":"http","url":"https://mcp.context7.com/mcp"}}}` (the owner adds this file, since the agent may not edit its own server config; Claude Code asks to approve it on the next session). It sends library names and questions to Upstash, so never paste secrets or private data into a query. An optional free API key raises rate limits; keep it out of `.mcp.json`. For Next.js, the bundled docs in `node_modules/next/dist/docs/` still win (see `AGENTS.md`).
+- **Strix** ([usestrix/strix](https://github.com/usestrix/strix), Apache-2.0): an AI penetration tester. Not installed. It needs Docker running, Python 3.12+ (this Mac has 3.9) and a paid LLM API key, and it actively attacks its target. If used: install the pinned package (`pipx install strix-agent==1.7.0`), not the `curl | bash` installer; set `STRIX_TELEMETRY=0`; point it only at a local build (`npm run build && npm run start`) or source code, never the live site or the production database; check the owner's machine and network policy before installing Docker or running attack tools.
+- **Supabase** ([supabase/supabase](https://github.com/supabase/supabase), Apache-2.0): a hosted backend (Postgres, auth, storage, realtime). Not a tool to install; switching from Neon is an owner decision for when accounts and payments are built.
 
 ## Reference material (not skills)
 
