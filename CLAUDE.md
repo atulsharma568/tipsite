@@ -20,7 +20,7 @@
 7. Still undecided, so they must not appear on the page: payout timing, paid highlighted messages.
 8. Build the tip page and backend only when the owner says so.
 9. Competitor teardown with REA (`rea-agents@6.4.0`, visitor-only, outputs outside the repo): Hyperchat done; SuperTips and StreamTipz legal/contact pages done (2026-10-14), summary at `/tmp/competitors-rea/legal-synthesis.md` on the owner's machine. Still to do when the owner asks: a ranked build-first/later/left-out feature list.
-10. Owner decision: how creators sign in (email code, password, Google). `/signup` is the waitlist and `/signin` a stub that sends nothing; real accounts need this and the backend.
+10. [Done 2026-10-21] Sign-in: Google OAuth with YouTube scope (`next-auth` v5). Run `db/schema-users.sql` in Neon and add `AUTH_SECRET`, `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET` to Vercel. Add `https://tipsite.vercel.app/api/auth/callback/google` as an authorised redirect URI in Google Cloud Console.
 11. Owner to check the site on a real phone (Android and, if possible, an iPhone) with the checklist given on 2026-10-14; the emulated low-end Android pass is done and logged in `PROGRESS.md`.
 
 ## Direction from the owner
