@@ -55,3 +55,9 @@ next-env.d.ts
 /design-refs/
 
 waitlist-*.csv
+
+# Local Claude Code data
+.claude/backups/
+.claude/cache/
+.claude/projects/
+.claude/settings.json

@@ -9,7 +9,7 @@
 - `package-lock.json` must only reference `https://registry.npmjs.org/`; rewrite any private-mirror URLs before committing.
 - Keep the "Next steps" list below current: tick off or rewrite items as work finishes.
 
-## Next steps (as of 2026-10-16)
+## Next steps (as of 2026-10-22)
 
 1. Decided: Razorpay's charges sit on top of the 5% and are paid by the creator out of the payout; fans pay exactly the tip (owner, 2026-10-14). At Razorpay's standard rate (2% + 18% GST on that charge) a ₹100 tip leaves the creator ₹92.64. The worked example is on the fee tile and in the FAQ; re-check Razorpay's rate before launch.
 2. Hero hands: polished version committed and approved "for now" on 2026-10-14; the owner said it is not yet what they imagined, so expect a revision request.
@@ -18,10 +18,11 @@
 5. Legal pages drafted (2026-10-14): terms, privacy, refunds, delivery, contact and grievances, pricing, about, and a footer on every page. Before launch or a Razorpay application: the owner fills in operator details in `src/lib/legal.ts`, confirms the default timelines and the 18+ rule listed in `PROGRESS.md`, gets a lawyer to review, then sets `LEGAL_DRAFT` to false.
 6. FAQ is finished for now (2026-10-14); revisit the fee and payout answers once those decisions are made, and write the legal copy.
 7. Still undecided, so they must not appear on the page: payout timing, paid highlighted messages.
-8. Build the tip page and backend only when the owner says so.
-9. Competitor teardown with REA (`rea-agents@6.4.0`, visitor-only, outputs outside the repo): Hyperchat done; SuperTips and StreamTipz legal/contact pages done (2026-10-14), summary at `/tmp/competitors-rea/legal-synthesis.md` on the owner's machine. Still to do when the owner asks: a ranked build-first/later/left-out feature list.
-10. [Done 2026-10-21] Sign-in: Google OAuth with YouTube scope (`next-auth` v5). Run `db/schema-users.sql` in Neon and add `AUTH_SECRET`, `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET` to Vercel. Add `https://tipsite.vercel.app/api/auth/callback/google` as an authorised redirect URI in Google Cloud Console.
-11. Owner to check the site on a real phone (Android and, if possible, an iPhone) with the checklist given on 2026-10-14; the emulated low-end Android pass is done and logged in `PROGRESS.md`.
+8. [Done for first slice 2026-10-22] Read-only owner-finance foundation is in place: `db/migrations/0001_finance_foundation.sql`, server-side owner authorization through `OWNER_GOOGLE_IDS`, protected `/admin` overview/finance/reconciliation/audit pages, honest empty states and focused route coverage. Do not integrate Razorpay or create fake financial data in this slice.
+9. Next slice: decide whether to build creator onboarding/public tip-page data or the Razorpay activation gate. The provider account model, webhook contract, refunds, settlements and payouts remain undecided.
+10. Competitor findings are maintained in `docs/competitor-findings.md`. The 2026-10-22 REA pass covered public StreamTipz, SuperTips and HyperChat surfaces; authenticated dashboards and private backends remain unknown.
+11. [Done 2026-10-21] Sign-in: Google OAuth with YouTube scope (`next-auth` v5). Run `db/schema-users.sql` in Neon and add `AUTH_SECRET`, `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET` to Vercel. Add `https://tipsite.vercel.app/api/auth/callback/google` as an authorised redirect URI in Google Cloud Console.
+12. Owner to check the site on a real phone (Android and, if possible, an iPhone) with the checklist given on 2026-10-14; the emulated low-end Android pass is done and logged in `PROGRESS.md`.
 
 ## Direction from the owner
 
@@ -35,9 +36,9 @@
   - it must not delay the headline or the button, must work at 320px, and shows a still frame under reduced motion;
   - prototype first; if the hands look cheap, drop it or use the note travelling between the card and the alert instead.
 
-## Research findings (competitor review, 2026-10-13)
+## Research findings (competitor review, updated 2026-10-22)
 
-Reviewed hyperchat.space, streamtipz.in and supertips.store: landing page, one creator tip page each, and mobile. These facts are from that review; re-check a page before quoting a number, since fees and pages change and some pages disagree with themselves.
+The detailed and latest findings are in `docs/competitor-findings.md`. The public REA evidence shows three different models: StreamTipz as direct UPI routing, SuperTips as creator monetisation plus community tooling, and HyperChat as realtime interaction infrastructure. These facts are public-surface observations only; re-check pages before quoting changing prices or claims.
 
 - Hyperchat: fee, payout and KYC terms not published. Tips priced by type (text ₹40, voice ₹150, sound ₹30, media ₹100), text-to-speech, a 44-clip soundboard, 70-character messages, themed creator pages.
 - StreamTipz: 5% or 7% through prepaid "Alert Tokens" (its fee pages disagree). UPI only, fan email required, 30-character messages, a savings calculator.
