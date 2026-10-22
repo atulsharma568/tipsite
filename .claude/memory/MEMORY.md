@@ -1,0 +1,6 @@
+- [Work only in TipSite repo](work-only-in-tipsite-repo.md) — confine all work to /Users/asharm475/Documents/TipSite
+- [Ask effort + ultracode per step](ask-effort-and-ultracode-per-step.md) — before each step, recommend effort level, model and whether ultracode is needed, and ask
+- [Suggest /clear after finished steps](suggest-clear-after-steps.md) — end each pushed step with a short /clear reminder
+- [AcePressure is the current tip setup](acepressure-current-tip-setup.md) — owner tips via self-hosted AcePressure now, moves channel to Tipsite later; known bugs noted
+- [Splash + title-screen feature](project-splash-title-screen.md) — shipped 2026-10-21; how the splash/GlobalBackground/page-scrolled flow works and what the 3 correctness fixes were
+- [Payment provider is Razorpay](payment-provider-cashfree.md) — Razorpay chosen (no annual fee, ~93% UPI success rate); 5% platform + 2.36% Razorpay = ₹92.64 on ₹100, provider name not shown publicly
