@@ -48,8 +48,7 @@ next-env.d.ts
 /.playwright-cli/
 /.impeccable/review/
 
-# third-party agent skills (reinstall with agent-skills/install.sh)
-/.claude/skills/
+# local-only claude settings
 /.claude/settings.local.json
 
 # design reference copies (refetch: see agent-skills/README.md)
