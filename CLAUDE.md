@@ -9,7 +9,7 @@
 - `package-lock.json` must only reference `https://registry.npmjs.org/`; rewrite any private-mirror URLs before committing.
 - Keep the "Next steps" list below current: tick off or rewrite items as work finishes.
 
-## Next steps (as of 2026-10-22)
+## Next steps (as of 2026-10-23)
 
 1. Decided: Razorpay's charges sit on top of the 5% and are paid by the creator out of the payout; fans pay exactly the tip (owner, 2026-10-14). At Razorpay's standard rate (2% + 18% GST on that charge) a ₹100 tip leaves the creator ₹92.64. The worked example is on the fee tile and in the FAQ; re-check Razorpay's rate before launch.
 2. Hero hands: polished version committed and approved "for now" on 2026-10-14; the owner said it is not yet what they imagined, so expect a revision request.
@@ -19,7 +19,7 @@
 6. FAQ is finished for now (2026-10-14); revisit the fee and payout answers once those decisions are made, and write the legal copy.
 7. Still undecided, so they must not appear on the page: payout timing, paid highlighted messages.
 8. [Done for first slice 2026-10-22] Read-only owner-finance foundation is in place: `db/migrations/0001_finance_foundation.sql`, server-side owner authorization through `OWNER_GOOGLE_IDS`, protected `/admin` overview/finance/reconciliation/audit pages, honest empty states and focused route coverage. Do not integrate Razorpay or create fake financial data in this slice.
-9. Next slice: decide whether to build creator onboarding/public tip-page data or the Razorpay activation gate. The provider account model, webhook contract, refunds, settlements and payouts remain undecided.
+9. [Done 2026-10-22/23] Creator onboarding, Razorpay activation gate, payment flow and visual OBS alerts (1080p, 2K, vertical; instant/split/approve modes) are built. Run migrations 0007 to 0009 in Neon. Next slices, in order: (a) text-to-speech on the overlay (English and Hindi; test inside real OBS first), (b) fix the six stale desktop tests (the `/signup` waitlist and metadata tests, and the skip-link test on `/kabirplays`), (c) payouts, refunds and settlements, which remain undecided.
 10. Competitor findings are maintained in `docs/competitor-findings.md`. The 2026-10-22 REA pass covered public StreamTipz, SuperTips and HyperChat surfaces; authenticated dashboards and private backends remain unknown.
 11. [Done 2026-10-21] Sign-in: Google OAuth with YouTube scope (`next-auth` v5). Run `db/schema-users.sql` in Neon and add `AUTH_SECRET`, `AUTH_GOOGLE_ID`, `AUTH_GOOGLE_SECRET` to Vercel. Add `https://tipsite.vercel.app/api/auth/callback/google` as an authorised redirect URI in Google Cloud Console.
 12. Owner to check the site on a real phone (Android and, if possible, an iPhone) with the checklist given on 2026-10-14; the emulated low-end Android pass is done and logged in `PROGRESS.md`.
